@@ -1,0 +1,23 @@
+{
+  "name": "mixtralextractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "Behnam Kamranian <BehnamKamranian@gmail.com, behnam.kamranian@browse.ai>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "gpt-tokenizer": "^2.1.2",
+    "langchain": "^0.0.214",
+    "openai": "^4.19.1",
+    "puppeteer": "^19.11.1"
+  }
+}
