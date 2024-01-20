@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "npm run build && node ./dist/index.js"
   },
   "keywords": [],
   "author": "Behnam Kamranian <BehnamKamranian@gmail.com, behnam.kamranian@browse.ai>",
@@ -14,10 +16,12 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "@xenova/transformers": "^2.14.0",
     "dotenv": "^16.3.1",
     "gpt-tokenizer": "^2.1.2",
-    "langchain": "^0.0.214",
     "openai": "^4.19.1",
-    "puppeteer": "^19.11.1"
+    "openai-gpt-token-counter": "^1.1.0",
+    "path": "^0.12.7"
   }
 }
